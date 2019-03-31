@@ -1,0 +1,4 @@
+# Ignore downloaded/cached product feeds
+*.csv
+*.txt
+*.TXT

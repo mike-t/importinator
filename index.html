@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Importinator&trade;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.lumen.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">--> 
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- heading and controls-->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Importinator&trade;</h1>
+        <p>Annihilating scum from product feeds since 2015!</p>
+
+        <!-- control form -->
+        <form class="form-inline" role="form" name="juca-form" id="juca-form" action="javascript:getFeed();">
+          <p>
+            <!-- feed selection -->
+            <div class="form-group">
+              <label class="sr-only" for="term-feed">Target</label>
+              <select class="form-control" name="term-feed" id="term-feed">
+                <option value="ingram-micro-au">Ingram Micro AU</option>
+                <option value="italian-boutique">Italian Boutique</option>
+              </select>
+            </div>
+          </p>
+          <!-- go button! -->
+          <p style="padding-top: 20px;">
+            <button type="submit" class="btn btn-primary btn-lg btn-danger" name="form_button" id="form_button">Scan For Data Feed &raquo;</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- the error container-->
+      <div class="row">
+        <div id="error">
+        </div>
+      </div>
+
+      <!-- summary container-->
+      <div class="row" id="summary" style="display: none">
+        <div class="col-md-10">
+          <h2>What just happened?!</h2>
+          <p id="summary-text">Annihilated scum from xx products from xxxxxxx.com in x seconds!</p>
+          <p><a id="download-button" class="btn btn-danger" href="#" download="" role="button">Download CSV &raquo;</a></p>
+        </div>
+      </div>
+      
+      <!-- the detail container-->
+      <div class="row" id="detail" style="display: none">
+        <div class="col-md-10">
+          <h2>The Gory Detail</h2>
+          <p id="detail-table"></p>
+        </div>
+      </div>
+
+      <footer style="margin-top: 40px;">
+        <p>&copy; Michael Walton - JUCA 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
